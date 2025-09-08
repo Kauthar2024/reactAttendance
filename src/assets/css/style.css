@@ -1,5 +1,7 @@
 body{
-    /* background-color: rgb(118, 54, 9); */
+    /* background-color: rgb(0, 179, 255); */
+    /* background-color: rgba(2, 7, 73, 1); */
+    /* background-color: blue; */
     margin: 0;
     padding: 0;
 }
@@ -135,7 +137,7 @@ th:nth-child(1),td:nth-child(1){
     background-color:rgb(169, 169, 248);
 }
 /* LOGIN */
-.icons{
+/* .icons{
     font-size: 30px;
     text-align: center;
    
@@ -151,21 +153,132 @@ th:nth-child(1),td:nth-child(1){
   margin: 0 3px;
   width: 44px;
   height: 40px;
-}
+} */
 
-.log input{
+.fields input{
     width: 30%;
     border-radius: 5px;
     padding: 8px;
+    padding-left: 26px;
     margin-top: 10px;
     border: 2px solid rgb(153, 153, 222);
     
 }
-.log input #remember{
-    display: none;
+
+.circleText h1{
+    color:goldenrod; 
+    text-align: start;
 }
-/* .log label{
-    text-align: left;
+.circleText h3,p{
+    color:white; 
+    text-align: start;
+}
+input[type="checkbox" i] {
+    /* background-color: initial; */
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    position: relative;
+    right: 100px;
+    margin-top: 10px;
+}
+label[for="text"]{
+    /* padding-bottom: 180px; */
+    position: relative;
+    right: 260px;
+    bottom: 10px;
+    /* word-spacing: 3px   ; */
+    font-size: 16px;
+}
+.signIn h4{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.hr-text {
+  display: flex;
+  /* align-items: center; */
+  /* text-align: center; */
+  color: gray;        
+  font-weight: bold;  
+  margin: 20px 0;      
+}
+
+.hr-text::before,
+.hr-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid gray;  
+}
+
+.hr-text:not(:empty)::before {
+  margin-right: 10px; 
+}
+
+.hr-text:not(:empty)::after {
+  margin-left: 10px;  
+}
+
+
+.btn_signIn button{
+    background-color:rgba(2, 7, 73, 1);
+    width: 70%;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+input[type="text"]{
+    text-align: center;
+    border-radius: 5px;
+
+}
+/* REGISTRATION */
+
+.fiel{
+    margin-bottom: 10px;
+}
+.fiel input,select{
+     width: 80%;
+    /* border-radius: 5px; */
+    /* margin-top: 18px; */
+    padding-left: 20px;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 2px;
+}
+label[for="word"]{
+    /* padding-bottom: 180px; */
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    /* word-spacing: 3px   ; */
+    font-size: 16px;
+}
+.fiel input:hover{
+    border: 3px solid rgb(162, 162, 227);
     
-} */
+}
+#icon{
+    position: relative;
+    left: 360px;
+}
+/* select{
+        width: 80%;
+    border-radius: 5px;
+    margin-top: 18px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 50px;
+    color: gray;
+    height: 40px;
+    margin-top: 2px;
+}  */
+   
+    
+
+
+
+
  

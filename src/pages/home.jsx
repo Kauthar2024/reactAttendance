@@ -1,17 +1,19 @@
-import { useState } from 'react';
-import SignaturePad  from '../components/SignaturePad';
-import Footer from '../components/Footer';
-const Home = () => {
-    const [signature , setSignature] = useState(null);
-      
+import { useLocation } from "react-router-dom";
+import About from "./About";
 
+const Home = () => {
+    const location = useLocation();
+    // const username = location.state?.username || localStorage.getItem("loggedInUser") || "Guest";
+    const username = location.state?.username || "Guest";
+      console.log(location.state?.username)
+ const name = "Kauthar"
     return (
         <>
-        {/* <main> */}
-            {/* <div className="container"> */}
+        <main> 
+             <div className="container"> 
                 {/* <p>ertyui</p> */}
               <div className="form-container">
-                 <h1>employee attendance form</h1>
+                 <h1>Welcome employee {username} attendance form</h1>
             <form action="">
 
                 <div class="names">
@@ -94,13 +96,7 @@ const Home = () => {
                     </tbody>
                 </table>
                 <h2>Employee Signature</h2>
-                <SignaturePad onSave={(data)=> setSignature(data)}/>
-                    {signature && (
-                        <p className="mt-4 text-sm text-gray-400">
-                           signature captured and ready to submit! 
-                        </p>
-                    )}
-                  
+
    
                    <h2>date singned</h2>
                     <input type="Date" id="Date" name="Date" />  <br />
@@ -110,9 +106,10 @@ const Home = () => {
 
                       </div>
         </div>
-            {/* </div> */}
-        {/*  </main> */}
-        <Footer/>
+        <About username={name}/>
+            </div>
+         </main>
+       
         </>
     );
 }
