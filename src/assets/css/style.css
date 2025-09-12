@@ -44,13 +44,48 @@ h1{
 .input-names input:hover{
     border: 3px solid rgb(162, 162, 227);
 }
+/* .world{
+    margin-bottom: 25px;
+} */
+
+/* .world input{
+     width: 70%;
+    border-radius: 5px;
+    margin-top: 18px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 5px;
+}  */
+/* .world input,select{
+     width: 40%;
+    padding-left: 100px;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 2px;
+}  */
+/* .world label[for="status"]{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    text-transform: capitalize;
+  
+    font-size: 16px;
+} */
+.world input,select:hover{
+    border: 3px solid rgb(162, 162, 227);
+}
+    
+
 
 .field{
     margin-bottom: 25px;
 }
 
 .field input{
-     width: 70%;
+     width: 85%;
     border-radius: 5px;
     /* margin-top: 18px; */
     padding-left: 20px;
@@ -73,10 +108,11 @@ h2{
 }
 table{
     width: 600px;
+    /* height: 100px; */
 
 }
 table, th,td{
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
     padding-left: 10px;
     border: 3px solid #00ADB5;
@@ -137,23 +173,7 @@ th:nth-child(1),td:nth-child(1){
     background-color:rgb(169, 169, 248);
 }
 /* LOGIN */
-/* .icons{
-    font-size: 30px;
-    text-align: center;
-   
-    
-}
-.icons a {
-  border: 1px solid #004754;
-  background-color: #fff;
-  border-radius: 25%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3px;
-  width: 44px;
-  height: 40px;
-} */
+
 
 .fields input{
     width: 30%;
@@ -228,18 +248,14 @@ label[for="text"]{
     font-size: 20px;
     border-radius: 5px;
 }
-input[type="text"]{
-    text-align: center;
-    border-radius: 5px;
 
-}
 /* REGISTRATION */
 
 .fiel{
     margin-bottom: 10px;
 }
 .fiel input,select{
-     width: 80%;
+     width: 88%;
     /* border-radius: 5px; */
     /* margin-top: 18px; */
     padding-left: 20px;
@@ -264,17 +280,7 @@ label[for="word"]{
     position: relative;
     left: 360px;
 }
-/* select{
-        width: 80%;
-    border-radius: 5px;
-    margin-top: 18px;
-    padding-left: 20px;
-    border: none;
-    border-radius: 50px;
-    color: gray;
-    height: 40px;
-    margin-top: 2px;
-}  */
+
    
     
 

@@ -1,15 +1,12 @@
 // import React from 'react';
-// import About from './About';
 
-// const Contact = () => {
-//  const name = "Kauthar"
-
+// function GetApicall(){
 //     return (
 //         <div>
-//         <About username={name}/>
-            
+//           <h1>get Api</h1>  
 //         </div>
 //     );
 // }
 
 // export default Contact;
+

@@ -87,14 +87,15 @@ const Login = () => {
     const [name1, setName1] = useState("");
     const [password1, setPassword1] = useState("");
     const handleFormLogin=()=>{
-        const regName = localStorage.getItem("name");
+        const regFullName = localStorage.getItem("name");
+        const fName= regFullName.split(" ")[0]
         const regPsswrd = localStorage.getItem("password");
 
-        if (name1 == regName && password1 == regPsswrd)  {
+        if (name1 == fName && password1 == regPsswrd)  {
             alert("valid user");
             localStorage.setItem("loggedUser", name1);
             navigate("/home");
-            // navigate("/home", {state:{username: name1}})
+           
         }
         else{
             alert("Invalid user");
@@ -128,8 +129,6 @@ const Login = () => {
                         <div className="field">
                             <input type="password"placeholder="Password" onChange={e=> setPassword1(e.target.value)} value={password1} />
                              
-                             {/* <input type="checkbox" id="remember" name="remember" />
-                              <label for="text">Remember me</label> */}
                         </div>
                         <div className="btn_signIn">
                             <button type="button" onClick={()=>handleFormLogin()} style={{color:"white"}}>Sign In</button> 

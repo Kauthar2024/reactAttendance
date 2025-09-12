@@ -90,8 +90,7 @@ const Registration = () => {
      const [email, setEmail] = useState("");
      const [empId, setEmpId] = useState("");
      const [confirmPassword, setconfirmPassword] = useState("");
-    //  const [phone, setPhone] = useState("");
-    //  const [phoneCode, setPhoneCode] = useState("");
+
     const handleFormSubmit=(e)=>{
         e.preventDefault();  //prevent the default behaviour of a form from refreshing the web page which can clear/ lose the input data
         if (password !== confirmPassword) {
@@ -103,8 +102,7 @@ const Registration = () => {
         localStorage.setItem("password", password);
         localStorage.setItem("email", email);
         localStorage.setItem("empId", empId);
-        // localStorage.setItem("confirmPassword", confirmPassword);
-        // localStorage.setItem("phone", phone);
+       
         
         alert("Registration Successfully! You can now log in")
 
@@ -140,7 +138,7 @@ const Registration = () => {
                     <form onSubmit={(e)=>handleFormSubmit(e)}>
                         <h4>Sign Up</h4>
                         <div className="fiel">
-                            <input type="name"placeholder="User Name" onChange={(e)=>setName(e.target.value)} value={name}/>
+                            <input type="name"placeholder="Full Name" onChange={(e)=>setName(e.target.value)} value={name}/>
                         </div>
                         <div className="fiel">
                             <input type="email"placeholder="Your Email" onChange={(e)=>setEmail(e.target.value)} value={email}/>
@@ -148,14 +146,7 @@ const Registration = () => {
                         <div className="fiel">
                             <input type="employee ID"placeholder="Employee ID" onChange={(e)=>setEmpId(e.target.value)} value={empId}/>
                         </div>
-                        {/* <div className="fiel">
-                            <select name="phone" id="phone" onChange={(e)=> setPhoneCode(e.target.value)} value={phoneCode}>
-                                 <option value="tanzania">Tanzania +255</option>
-                                  <option value="kenya">Kenya +254</option>
-                                   <option value="uganda">Uganda +99</option>
-                            </select>
-                            <input type="tel" placeholder="Enter phone number" onChange={(e)=> setPhone} value={phone} />
-                        </div> */}
+                   
                              
                         <div className="fiel">
                             <input type="password"placeholder="Password" onChange={(e)=>setPassword(e.target.value)} value={password}/>
