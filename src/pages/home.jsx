@@ -160,10 +160,10 @@ const formData = {
 
             </form>
              <div className="btn_checkIn" style={{marginTop:"15px"}}>
-                    <button onClick={()=>handleCheckIn()} style={{border:"none",marginRight:"15px",width:"100px",height:"40px",fontSize:"18px",backgroundColor:"red",color:"white"}}>Check In</button>
+                    <button onClick={()=>handleCheckIn()} disabled={status ==="absent"} style={{border:"none",marginRight:"15px",width:"100px",height:"40px",fontSize:"18px",backgroundColor:"red",color:"white",cursor: status ==="absent" ? "not-allowed":"pointer"}}>Check In</button>
                     <span>{checkIn? checkIn : "Not checked in yet"}</span>
                     <span>
-                      <button onClick={()=>handleCheckOut()} style={{marginLeft:"15px",marginRight:"15px",border:"none",width:"100px",height:"40px",fontSize:"18px",backgroundColor:"green",color:"white"}}>Check Out</button>
+                      <button onClick={()=>handleCheckOut()} disabled={status === "absent"} style={{marginLeft:"15px",marginRight:"15px",border:"none",width:"100px",height:"40px",fontSize:"18px",backgroundColor:"green",color:"white",cursor:status === "absent"? "not-allowed":"pointer"}}>Check Out</button>
                       <span>{checkOut ? checkOut : "Not checked out yet"}</span>
 
                     </span>
@@ -195,7 +195,7 @@ const formData = {
                                {/* <img src={url} alt="" /> */}
                      
                       <div className="btn">
-                        <button type="submit" onClick={(e)=>handleAttendForm(e)}>submit</button>
+                        <button type="submit" onClick={(e)=>handleAttendForm(e)}disabled={status==="absent"}>submit</button>
                       </div>
         </div>
         {/* <About username={name}/> */}

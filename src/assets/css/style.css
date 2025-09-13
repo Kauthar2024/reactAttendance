@@ -1,7 +1,4 @@
 body{
-    /* background-color: rgb(0, 179, 255); */
-    /* background-color: rgba(2, 7, 73, 1); */
-    /* background-color: blue; */
     margin: 0;
     padding: 0;
 }
@@ -30,50 +27,20 @@ h1{
 }
 .lname{
     float: right;
-    /* margin-right: 60px; */
+   
 }
 .input-names input{
     width: 66%;
     height: 35px;
     border: none;
     border-radius: 20px 20px;
-    /* margin-bottom: 10px; */
     padding-left: 20px;
     margin: 5px 0px 20px 0px;
 }
 .input-names input:hover{
     border: 3px solid rgb(162, 162, 227);
 }
-/* .world{
-    margin-bottom: 25px;
-} */
 
-/* .world input{
-     width: 70%;
-    border-radius: 5px;
-    margin-top: 18px;
-    padding-left: 20px;
-    border: none;
-    border-radius: 50px;
-    height: 40px;
-    margin-top: 5px;
-}  */
-/* .world input,select{
-     width: 40%;
-    padding-left: 100px;
-    border: none;
-    border-radius: 50px;
-    height: 40px;
-    margin-top: 2px;
-}  */
-/* .world label[for="status"]{
-    position: relative;
-    left: 100px;
-    bottom: 30px;
-    text-transform: capitalize;
-  
-    font-size: 16px;
-} */
 .world input,select:hover{
     border: 3px solid rgb(162, 162, 227);
 }
@@ -87,7 +54,6 @@ h1{
 .field input{
      width: 85%;
     border-radius: 5px;
-    /* margin-top: 18px; */
     padding-left: 20px;
     border: none;
     border-radius: 50px;
@@ -108,7 +74,7 @@ h2{
 }
 table{
     width: 600px;
-    /* height: 100px; */
+   
 
 }
 table, th,td{
@@ -116,7 +82,7 @@ table, th,td{
     border-collapse: collapse;
     padding-left: 10px;
     border: 3px solid #00ADB5;
-    /* border: 3px solid ; */
+   
 
 }
 thead {
@@ -127,7 +93,6 @@ th:nth-child(1),td:nth-child(1){
 }
  #Date{
     width: 30%;
-    /* background-color: aqua; */
     border: none;
     height: 20px;
     border-radius: 8px;
@@ -194,7 +159,6 @@ th:nth-child(1),td:nth-child(1){
     text-align: start;
 }
 input[type="checkbox" i] {
-    /* background-color: initial; */
     cursor: default;
     appearance: auto;
     box-sizing: border-box;
@@ -203,11 +167,9 @@ input[type="checkbox" i] {
     margin-top: 10px;
 }
 label[for="text"]{
-    /* padding-bottom: 180px; */
     position: relative;
     right: 260px;
     bottom: 10px;
-    /* word-spacing: 3px   ; */
     font-size: 16px;
 }
 .signIn h4{
@@ -216,8 +178,6 @@ label[for="text"]{
 }
 .hr-text {
   display: flex;
-  /* align-items: center; */
-  /* text-align: center; */
   color: gray;        
   font-weight: bold;  
   margin: 20px 0;      
@@ -256,8 +216,6 @@ label[for="text"]{
 }
 .fiel input,select{
      width: 88%;
-    /* border-radius: 5px; */
-    /* margin-top: 18px; */
     padding-left: 20px;
     border: none;
     border-radius: 50px;
@@ -265,21 +223,19 @@ label[for="text"]{
     margin-top: 2px;
 }
 label[for="word"]{
-    /* padding-bottom: 180px; */
     position: relative;
-    left: 100px;
+    left: 120px;
     bottom: 30px;
-    /* word-spacing: 3px   ; */
     font-size: 16px;
 }
 .fiel input:hover{
     border: 3px solid rgb(162, 162, 227);
     
 }
-#icon{
+/* #icon{
     position: relative;
     left: 360px;
-}
+} */
 
    
     
